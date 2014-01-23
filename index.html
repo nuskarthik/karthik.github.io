@@ -1,0 +1,42 @@
+---
+layout: base
+---
+<nav>
+  <a href='/blog/'>Blog</a>
+  <a href='/cv.html'>My CV</a>
+</nav>
+<div class='bio'>
+  <div class='me'>
+    <img class='avatar' src='/images/avatar-large.png'>
+    <div class='bio-profiles'>
+      {% include profile_links.html %}
+    </div>
+  </div>
+  <div class='bio-carousel'>
+    <div class='bio-desc'>
+      <div class='desc-part active name'>
+        <p>Hello World!<br> I am</p>
+        <h1>Karthik Rajasekaran</h1>
+      </div>
+      <div class='desc-part'>
+        <p>I am a student, coder, engineer, and geek always looking for the next awesome thing.</p>
+      </div>
+      <div class='desc-part'>
+        <p>
+          You can find out more about me in
+          <a href='/cv.html'>my CV</a>
+          or if you are in interested in the written, you can visit
+          <a href='/blog/'>my blog</a>
+          .
+        </p>
+      </div>
+      <div class='desc-part'>
+        <p>Feel free to contact me on any of the links below or via email at <a href="mailto:nuskarthik@gmail.com">nuskarthik@gmail.com</a></p>
+      </div>
+    </div>
+    <div class='bio-nav'>
+      <a class='prev' href='#'>&laquo;</a>
+      <a class='next' href='#'>&raquo;</a>
+    </div>
+  </div>
+</div>

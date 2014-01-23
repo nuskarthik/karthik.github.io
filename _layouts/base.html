@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} &middot; {% endif %}Karthik Rajasekaran</title>
+    <meta content='{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %} I develop and design for the web, read and generally have a good time. This is my portfolio.{% endif %}' name='description'>
+    <meta content='width=device-width,initial-scale=1' name='viewport'>
+    <!-- facebook meta tags -->
+    <meta content='100003993588361' property='fb:admins'>
+    <meta content="Karthik's Blog" name='og:site_name'>
+    <meta content='{{ site.url }}/images/avatar-large.png' name='og:image'>
+    <meta content='{{ page.title }}' name='og:title'>
+    <meta content='{{ site.url }}{{ page.url }}' name='og:url'>
+    <!-- scripts -->
+    <script src='/js/jquery-1.10.2.min.js'></script>
+    <script src='/js/prefixfree.min.js'></script>
+    <script src='/js/main.js'></script>
+    <!-- css -->
+    <link href='/css/main.css' rel='stylesheet'>
+  </head>
+  <body>
+    {{ content }}
+    <!-- .copyright-wrapper -->
+    <!-- .copyright -->
+    <!-- All Rights Reserved - &copy; Assaf Gelber {{ site.time | date: "%Y"}} -->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-42650316-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

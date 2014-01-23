@@ -1,0 +1,26 @@
+---
+layout: default
+title: 'Blog'
+---
+<h1>Latest Posts</h1>
+<a class='icon-rss' href='/rss.xml'></a>
+<section class='latest-posts'>
+  <ul>
+    {% for post in site.posts %}
+    <li class='post-preview'>
+      <a href='{{ post.url }}'>
+        <h3>
+          {{ post.title }}
+        </h3>
+      </a>
+      <span class='post-time'>
+        {{ post.date | date: "%B %d, %Y" }}
+      </span>
+      <div class='post-excerpt'>
+        {{ post.excerpt }}
+      </div>
+      <a href='{{ post.url }}'>Read more &raquo;</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

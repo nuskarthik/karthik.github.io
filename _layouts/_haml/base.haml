@@ -1,0 +1,43 @@
+!!!
+%html
+	%head
+		%title {% if page.title %}{{ page.title }} &middot; {% endif %}Assaf Gelber
+		%meta{name: "description", content: "{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}I am Assaf Gelber. I develop and design for the web, play poker, drink beer and a few other things. I write about web development and design, mostly front-end, somethimes backend, sometimes neither.{% endif %}"}
+
+		%meta{name: "viewport", content: "width=device-width,initial-scale=1"}
+
+		/ facebook meta tags
+		%meta{property: "fb:admins", content: "100003993588361"}
+		%meta{name: "og:site_name", content: "Assaf Gelber's Blog"}
+		%meta{name: "og:image", content: "{{ site.url }}/images/avatar-large.png"}
+		%meta{name: "og:title", content: "{{ page.title }}"}
+		%meta{name: "og:url", content: "{{ site.url }}{{ page.url }}"}
+
+		/ scripts
+		%script{src: "/js/jquery-1.10.2.min.js"}
+		%script{src: "/js/prefixfree.min.js"}
+		%script{src: "/js/main.js"}
+
+		/ css
+		%link{rel: "stylesheet", href: "/css/main.css"}
+
+	%body
+
+		{{ content }}
+
+		/ .copyright-wrapper
+		/ 	.copyright
+		/ 		All Rights Reserved - &copy; Assaf Gelber {{ site.time | date: "%Y"}}
+			
+		%script
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-42650316-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript'; 
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; 
+			s.parentNode.insertBefore(ga, s);
+			})();

@@ -1,0 +1,7 @@
+name: "Assaf Gelber Blog"
+description: "Web design and development blog written by Israeli developer, Assaf Gelber"
+url: "http://agelber.com"
+
+exclude: ["Rakefile"]
+
+permalink: "/blog/:title"
