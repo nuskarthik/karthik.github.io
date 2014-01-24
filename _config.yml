@@ -1,6 +1,6 @@
-name: "Assaf Gelber Blog"
-description: "Web design and development blog written by Israeli developer, Assaf Gelber"
-url: "http://agelber.com"
+name: "Karthik Rajasekaran Blog"
+description: "One student's simple portfolio"
+url: "http://karthik.github.io"
 
 exclude: ["Rakefile"]
 
