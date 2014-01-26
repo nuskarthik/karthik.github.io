@@ -1,7 +1,8 @@
 name: "Karthik Rajasekaran Blog"
 description: "One student's simple portfolio"
-url: "http://karthik.github.io"
-
+#url: "http://localhost:4000"
+baseurl: http://karthik.github.io
 exclude: ["Rakefile"]
-
 permalink: "/blog/:title"
+permalinks: pretty
+markdown: rdiscount
