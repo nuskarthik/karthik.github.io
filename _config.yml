@@ -1,7 +1,8 @@
-name: Karthik Raj Portfolio
-url: "http://localhost:4000"
-permalinks: pretty
-markdown: rdiscount
-pygments: true
-exclude: ["Rakefile"]
-permalink: "/blog/:title"
+ name: "Karthik Rajasekaran Blog"
+  description: "One student's simple portfolio"
+ #url: "http://localhost:4000"
+ baseurl: http://karthik.github.io
+ exclude: ["Rakefile"]
+ permalink: "/blog/:title"
+ permalinks: pretty
+ markdown: rdiscount
