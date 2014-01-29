@@ -1,5 +1,6 @@
-name: "Karthik Rajasekaran Blog"
-description: "One student's simple portfolio"
-markdown: redcarpet
+name: "Karthik Rajasekaran Site"
+permalink: pretty
+url: "http://localhost:4000"
+permalinks: pretty
+markdown: rdiscount
 pygments: true
-baseurl: /
