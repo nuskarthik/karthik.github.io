@@ -2,3 +2,5 @@ _site
 _drafts
 .sass-cache
 *.sassc
+Gemfile
+Gemfile.lock
