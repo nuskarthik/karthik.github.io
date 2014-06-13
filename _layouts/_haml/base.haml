@@ -1,14 +1,14 @@
 !!!
 %html
 	%head
-		%title {% if page.title %}{{ page.title }} &middot; {% endif %}Assaf Gelber
-		%meta{name: "description", content: "{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}I am Assaf Gelber. I develop and design for the web, play poker, drink beer and a few other things. I write about web development and design, mostly front-end, somethimes backend, sometimes neither.{% endif %}"}
+		%title {% if page.title %}{{ page.title }} &middot; {% endif %}Karthik Rajasekaran
+		%meta{name: "description", content: "{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}I am a 20 year student currently based in Singapore. I am very passionate about doing anything related to agile development and design, whether it be creating a complete website from scratch or building a hardware hack in a day. I enjoy immersing myself in the culture of other hackers and geeks frequeting hackathons and tech talks. I enjoy discussing the next big thing whether in the startup culture or in experimental research. Here is my resume.{% endif %}"}
 
 		%meta{name: "viewport", content: "width=device-width,initial-scale=1"}
 
 		/ facebook meta tags
 		%meta{property: "fb:admins", content: "100003993588361"}
-		%meta{name: "og:site_name", content: "Assaf Gelber's Blog"}
+		%meta{name: "og:site_name", content: "Karthik's Blog"}
 		%meta{name: "og:image", content: "{{ site.url }}/images/avatar-large.png"}
 		%meta{name: "og:title", content: "{{ page.title }}"}
 		%meta{name: "og:url", content: "{{ site.url }}{{ page.url }}"}
@@ -24,10 +24,6 @@
 	%body
 
 		{{ content }}
-
-		/ .copyright-wrapper
-		/ 	.copyright
-		/ 		All Rights Reserved - &copy; Assaf Gelber {{ site.time | date: "%Y"}}
 			
 		%script
 			var _gaq = _gaq || [];
