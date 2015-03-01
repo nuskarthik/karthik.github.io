@@ -1,17 +1,34 @@
----
-layout: base
-title: CV
----
-<a class='cv-back-link' href='/'>&laquo; Back Home</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>CV &middot; Karthik Raj</title>
+    <meta content='Karthik Raj. Engineer.' name='description'>
+    <meta content='width=device-width,initial-scale=1' name='viewport'>
+    <!-- facebook meta tags -->
+    <meta content='100003993588361' property='fb:admins'>
+    <meta content='Karthik Raj Portfolio' name='og:site_name'>
+    <meta content='http://nuskarthik.github.io/images/avatar-large.png' name='og:image'>
+    <meta content='CV' name='og:title'>
+    <meta content='http://nuskarthik.github.io/cv.html' name='og:url'>
+    <!-- scripts -->
+    <script src='/js/jquery-1.10.2.min.js'></script>
+    <script src='/js/prefixfree.min.js'></script>
+    <script src='/js/main.js'></script>
+    <!-- css -->
+    <link href='/css/main.css' rel='stylesheet'>
+  </head>
+  <body>
+    <a class='cv-back-link' href='/'>&laquo; Back Home</a>
 <div class='cv'>
   <div class='cv-card'>
     <img class='avatar' src='/images/avatar-large.png'>
     <div class='cv-card-title'>
-      <h1 class='cv-card-name'>I am Karthik Rajasekaran</h1>
-      <span class='cv-card-job'>Engineer & Developer</span>
+      <h1 class='cv-card-name'>I am Karthik Raj</h1>
+      <span class='cv-card-job'>Software Engineer</span>
     </div>
     <div class='cv-card-bio'>
-      <p>I am a 20 year student currently based in Singapore. I am very passionate about doing anything related to agile development and design, whether it be creating a complete website from scratch or building a hardware hack in a day. I enjoy immersing myself in the culture of other hackers and geeks, often frequenting hackathons and tech talks. I enjoy discussing the next big thing whether in the startup culture or in experimental research. </p>
+      <p>I am a final year Computer Engineering student studying at the National University of Singapore. I like building software on various that have a real world impact.</p>
     </div>
     <div class='cv-card-contact'>
       <ul class='cv-contact-personal'>
@@ -21,18 +38,33 @@ title: CV
             <a href='nuskarthik@gmail.com'>nuskarthik@gmail.com</a>
           </span>
         </li>
+        <li class='cv-contact-item'>
+          <span class='icon-phone contact-label'></span>
+          <span class='contact-value'>+65 98916426</span>
+        </li>
       </ul>
       <ul class='cv-contact-web'>
-       <li class='cv-contact-item'>
-        <span class='icon-twitter contact-label'></span>
-        <span class='contact-value'>
-          <a href='http://twitter.com/heykarthikhere'>@heykarthikhere</a>
-        </span>
-      </li>
+        <li class='cv-contact-item'>
+          <span class='icon-site contact-label'></span>
+          <span class='contact-value'>
+            <a href='http://nuskarthik.github.io'>My Site</a>
+          </span>
+        </li>
+        <li class='cv-contact-item'>
+          <span class='icon-site contact-label'></span>
+          <span class='contact-value'>
+            <a href='http://www.linkedin.com/in/nuskarthik'>My LinkedIn</a>
+          </span>
+        </li>
       </ul>
       <ul class='cv-contact-social'>
-        </li>-->
-        <li class='cv-contact-item' >
+        <li class='cv-contact-item'>
+          <span class='icon-twitter contact-label'></span>
+          <span class='contact-value'>
+            <a href='http://twitter.com/heykarthikhere'>@heykarthikhere</a>
+          </span>
+        </li>
+        <li class='cv-contact-item'>
           <span class='icon-github contact-label'></span>
           <span class='contact-value'>
             <a href='http://github.com/nuskarthik'>@nuskarthik</a>
@@ -41,288 +73,252 @@ title: CV
       </ul>
     </div>
   </div>
-  <div class='cv-experience' >
-    <h2>Work Experience</h2>
+  <br>
+  <br>
+  <div class='cv-experience cv-full-width-list'>
+    <h2>Experience</h2>
     <ul>
-      <li class='cv-experience-item'>
-        <div class='cv-experience-place'>
-          <h3>Software Engineer Intern at IBM Singapore</h3>
-          <span class='cv-experience-time'>
-            January 2014 - Present
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>IBM Singapore</h3>
+          <span class='cv-full-width-item-date'>
+            January 2014 - July 2014
           </span>
-          <p class='cv-experience-place-desc'>Working as a part of the Data Analysis team</p>
+          <br>
+          <h3 class='cv-full-width-item-comment'>Software Engineer on QRadar team</h3>
         </div>
-        <div class='cv-experience-desc'>
-          <p>I am an intern currently working on expanding the QRADAR product, an enterprise security product.</p>
-          <p>Currently working full time under IBM under the ATAP program.</p><br/>
-          <h4>Full Stack Javascript</h4>
-          <ol><li>Node.js (backend),&nbsp AngularJS (frontend),&nbsp ExpressJS (web app management),&nbsp MongoDB</li></ol>
+        <div class='cv-full-width-item-desc'>
+          <ul>
+            <br>
+            <li>
+              <span class='icon-site contact-label'></span>
+              Tasked with independently building tools to improve the performance of the
+              <a href='http://www-03.ibm.com/software/products/en/qradar'>QRadar security</a>
+              platform
+            </li>
+            <br>
+            <li>
+              <span class='icon-site contact-label'></span>
+              Designed an application to perform Data Mining on system log files for patterns to allow the platform to handle classifying event conditions that were not pre-configured.
+              <em>AngularJS, Node, MongoDB, Express</em>
+            </li>
+            <br>
+            <li>
+              <span class='icon-site contact-label'></span>
+              Ideated and implemented a simulator to analyze the performance of the log miner output with the core platform by generating new test cases.
+              <em>Node, Nodyn</em>
+            </li>
+            <br>
+            <li>
+              <span class='icon-site contact-label'></span>
+              Improved mapping designed to suggest security violations using WEKA NaiveBayes classifier.
+              <em>Java</em>
+            </li>
+            <br>
+            <li>
+              <span class='icon-site contact-label'></span>
+              Delivered internal release of the toolbox with a regex tester which reduced L2 troubleshooting by 20 hours and configuration by 5 hours.
+            </li>
+          </ul>
         </div>
       </li>
-      <li class='cv-experience-item'>
-        <div class='cv-experience-place'>
-          <h3>Andriod Software Developer at Teamie Pvt. Ltd.</h3>
-          <span class='cv-experience-time'>
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>Teamie</h3>
+          <span class='cv-full-width-item-date'>
             May 2013 - July 2013
           </span>
-          <p class='cv-experience-place-desc'>Developed 2nd generation of Android application</p>
+          <br>
+          <h3 class='cv-full-width-item-comment'>Mobile Engineer</h3>
         </div>
-        <div class='cv-experience-desc'>
-          <p>Worked as a full time intern at the startup developing the 2nd generation version of their Android application which is currently on the Play Store.</p>
-          <p>Developed core functionality, UI design, cross-platform library support and analytics. Developed new features including calender and gradebook along with offline caching.</p><br/>
-          <h4>Stack</h4>
-          <ul><li>Java, &nbspAndroid SDK via ADT, &nbspXML</li></ul>
+        <div class='cv-full-width-item-desc'>
+          <ul>
+            <br>
+            <li>
+              Designated as the sole intern developing the Android version of the next generation of Teamie mobile.
+            </li>
+            <br>
+            <li>
+              Designed the user experience for phones and tablets and implemented the mobile version for the featuers of social learning web platform. Tested and benchmarked the application.
+              <em>Java, Android, XML</em>
+            </li>
+            <br>
+            <li>
+              Implemented caching system for offline viewing and mobile specific features with real time syncing.
+              <em>SQLite</em>
+            </li>
+            <br>
+            <li>
+              Modified design of API endpoint for Gradebook, reducing it's response time by a few seconds.
+              <em>PHP, JSON</em>
+            </li>
+            <br>
+            <li>
+              Released the application to clients, currently available on the
+              <a href='https://play.google.com/store/apps/details?id=com.theteamie.android.app&amp;hl=en'>Google Play Store</a>
+              and used by over 1000 users.
+            </li>
+          </ul>
         </div>
       </li>
-      <li class='cv-experience-item'>
-        <div class='cv-experience-place'>
-          <h3>Research Intern at Concept Labs, Cognizant Technology Solutions</h3>
-          <span class='cv-experience-time'>
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>Cognizant</h3>
+          <span class='cv-full-width-item-date'>
             May 2012 - July 2012
           </span>
-          <p class='cv-experience-place-desc'>Developed gesture recognition application for Kinect</p>
+          <br>
+          <h3 class='cv-full-width-item-comment'>Research Intern</h3>
         </div>
-        <div class='cv-experience-desc'>
-          <p>Was part of the physical computing project developing applications taking advantage of the Microsoft Kinect </p>
-          <p>Developed tracking software and data capture,full body tracking with machine learning libraries , integrated to work with existing application. Developed plugins to be used with module. Assisted with hardware aspects of project.</p><br/>
-          <h4>Stack</h4>
-          <ul><li>C#, &nbspXML(data)</li></ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class='cv-experience'>
-  <h2>Skill Experience</h2>
-    <div class='cv-experience-item'>
-    <table width='100%' ><tr>
-      <td width="50%" >
-      <br/><h3><b> Languages </b></h4>
-        <br/><h3>C</h3><br/>
-        Familiar with STL libraries and socket programming. Experience with interfacing with Arduinos.
-        <br/><br/><h3>C++</h3><br/>
-        Experience in multi-threading and competitive programming
-        Multi-processing knowledge
-       <br/> <br/><h3>Java</h3><br/>
-        Experience in advanced data structures, algorithms and Android Programming
-        <br/><br/><h3>C#</h3><br/>
-        Worked on gesture recognition application
-        <br/><br/><h3>PHP</h3><br/>
-        Familiar with CodeIgnitor and raw php. 
-      </td><td width="50%">
-      <br/><br/><h3>Client side Web</h3><br/>
-      HTML, HTML5, CSS, Javascript
-      <br/><br/><h3>Python</h3><br/>
-      Submitted multiple projects utilising python's frameworks
-      <br/><br/><h3>Assembly </h3><br/>
-      Knowledge of 8086 framework, implemented various projects on Intel microprocessors
-      <br/><br/><h3>Xilinx VHDL</h3><br/>
-      Curcuit design and simulation in VHDL. Implemented a working CPU with pipelining stages and hazard detection along with individual components ALU, Registers, and data buses separated by control logic. Familiar with LTSPice.
-    </td></tr>
-    <tr><td>
-    <br/><h3><b>Frameworks</b></h3><br/><br/>
-    <h3>Database/Data Stores</h3><br/>
-    mySQL, postgreSQL experience, MongoDB and Redis
-    <br/><br/><h3>JS</h3><br/>
-    node.js, AngularJS, ExpressJS
-    <br/><br/><h3>Python</h3><br/>
-    Django and Flask
-    </td>
-    <td>
-      <br/><h3><b>Others</b></h3>
-      Git, Windows, *nix 
-    </td></tr>
-    </table><br/><br/>
-    <h3> I am always looking forward to learning something new.</h3>
-  </div>
-  </div>
-
-  <div class='cv-experience' >
-    <h2>Project Experience</h2>
-    <ul>
-      <li class='cv-experience-item'>
-        <div class='cv-experience-place'>
-          <h3>Currently Being Updated</h3>
-          <p class='cv-experience-place-desc'>Please refer my unstaged <a href="http://www.github.com/nuskarthik" target="" >Github</a><br/>
-          <p>More updates are currently being made to my Github and my project portfolio. My full resume is available on request.</p></p>
-        </div>
-        <div class='cv-experience-desc'>
-          
+        <div class='cv-full-width-item-desc'>
+          <ul>
+            <br>
+            <li>
+              Independently developed a framework to perform gesture recognition of the user using the $N algorithm by making use of OpenNi and the Kinect SDK to track skeletal motion with the Kinect.
+              <em>C#</em>
+            </li>
+            <br>
+            <li>
+              Showcased a cross PC photo sharing application to demonstrate the framework's features.
+            </li>
+          </ul>
         </div>
       </li>
     </ul>
   </div>
-    <div class='cv-experience' >
-    <h2>Education</h2>
+  <div class='cv-side-projects cv-full-width-list'>
+    <h2>Projects</h2>
     <ul>
-      <li class='cv-experience-item'>
-        <div class='cv-experience-place'>
-        <span>Bachelor of Engineering in Computer Engineering (Hon.) </span>, National University of Singapore
-        </div>
-        <span class='cv-experience-time'>
-            2011 - (expected) 2015
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>HyMart | Project Lead</h3>
+          <a class='cv-full-width-item-link' href='http://www.github.com/CG3002'>code</a>
+          <span class='cv-full-width-item-date'>
+            <em>Python, Flask</em>
           </span>
-        </li>
-        </ul>
         </div>
-  <div class='cv-skills'>
+        <div class='cv-full-width-item-desc'>
+          Lead a team of 6 engineers to deliver a prototype of a 'smart' supermarket with online billing
+        </div>
+        <br>
+          Built both a retail and headquarters application for managing stock and dynamic pricing based on daily transactions and monitor analytics and trends and interfaced with custom built hardware.
+        </br>
+        <br>
+      </li>
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>Parallel Agent based Demographic Simulation | Final Year Project</h3>
+          <span class='cv-full-width-item-date'>
+            <em>C++, OpenMPI, D3.js</em>
+          </span>
+        </div>
+        <div class='cv-full-width-item-desc'>
+          Data science project to analyse the impact of immigration policies on education and employment in Singapore using agent based simulation.
+        </div>
+        <br>
+          Presented visualization of simulation using public government data.
+          <em>D3.js</em>
+        </br>
+        <br>
+      </li>
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>Clueless | Software Co-Lead</h3>
+          <span class='cv-full-width-item-date'>
+            <em>Python, Django</em>
+          </span>
+        </div>
+        <div class='cv-full-width-item-desc'>
+          Entrepreneurial venture to create a platform to allow interns multiple role internships
+        </div>
+        <br>
+          Developed frontend application and assisted user acquisition
+        </br>
+        <br>
+      </li>
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>Teammates</h3>
+          <a class='cv-full-width-item-link' href='http://www.github.com/TEAMMATES'>code</a>
+          <span class='cv-full-width-item-date'>
+            <em>Java, JSP</em>
+          </span>
+        </div>
+        <div class='cv-full-width-item-desc'></div>
+        <br>
+          Contributed to an Open Source Project. Fixed UI issues relating to course selection.
+        </br>
+        <br>
+      </li>
+      <li class='cv-full-width-item'>
+        <div class='cv-full-width-item-header'>
+          <h3 class='cv-full-width-item-title'>Hint</h3>
+          <span class='cv-full-width-item-date'>
+            <em>Java, Android, OpenCV</em>
+          </span>
+        </div>
+        <div class='cv-full-width-item-desc'></div>
+        <br>
+          Built an Android app that uses a location and an image of a place to tag a message which can be read by other users by visiting the location and scanning the area.
+        </br>
+        <br>
+          Uses GPS tracking and basic Augmented Reality
+        </br>
+        <br>
+      </li>
+    </ul>
+  </div>
+  <div class='cv-skills cv-half-width-list'>
     <h2>Skills</h2>
     <ul>
-      <!-- <li class='cv-skill'>
-        <span>Ruby/Rails</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-        </ul>
+      <li class='cv-skill'>
+        <span>Java</span>
       </li>
       <li class='cv-skill'>
-        <span>Javscript/jQuery</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='off'></li>
-        </ul>
-      </li>
-      <li class='cv-skill'>
-        <span>HTML5 & CSS3</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-        </ul>
-      </li>
-      <li class='cv-skill'>
-        <span>UI/UX</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-        </ul>
+        <span>Javascript</span>
       </li>
       <li class='cv-skill'>
         <span>Python</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-        </ul>
       </li>
       <li class='cv-skill'>
-        <span>SQL</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-        </ul>
-      </li> -->
+        <span>C++</span>
+      </li>
       <li class='cv-skill'>
-        <span>Coding</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-        </ul>
-      </li> 
+        <span>Android</span>
+      </li>
       <li class='cv-skill'>
         <span>Learning</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-        </ul>
       </li>
     </ul>
   </div>
-  <div class='cv-languages'>
-    <h2>Languages</h2>
-    <ul>
-      <li class='cv-language'>
-        <span>English</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-        </ul>
-      </li>
-      <li class='cv-language'>
-        <span>Tamil</span>
-        <ul class='cv-meter'>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='on'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-          <li class='off'></li>
-        </ul>
-      </li>
-    </ul>
+  <div class='cv-languages cv-half-width-list'>
+    <h2>Status</h2>
+    <p>Currently looking for a full time Software Engineering position</p>
+    <br>
+    <p>
+      <em>Experience with:</em>
+    </p>
+    <br>
+      MongoDB/Redis, AngularJS/BackboneJS, Coffeescript/Gulp/Grunt ,SASS ,ExpressJS ,PHP ,NodeJS/io.js ,Django/Flask ,SQLite/PostgresSQL ,Shell scripting ,Git
+    </br>
   </div>
+</div>
 
-  </div>
+    <!-- .copyright-wrapper -->
+    <!-- .copyright -->
+    <!-- All Rights Reserved - &copy; Karthik Raj 2015 -->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-42650316-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

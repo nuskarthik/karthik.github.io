@@ -10,11 +10,11 @@ title: CV
 
     %img.avatar{src: "/images/avatar-large.png"}
     .cv-card-title
-      %h1.cv-card-name I am Karthik Rajasekaran
-      %span.cv-card-job Engineer & developer
+      %h1.cv-card-name I am Karthik Raj
+      %span.cv-card-job Software Engineer
     
     .cv-card-bio
-      %p I am a 20 year student currently based in Singapore. I am very passionate about doing anything related to agile development and design, whether it be creating a complete website from scratch or building a hardware hack in a day. I enjoy immersing myself in the culture of other hackers and geeks frequeting hackathons and tech talks. I enjoy discussing the next big thing whether in the startup culture or in experimental research. Here is my resume.
+      %p I am a final year Computer Engineering student studying at the National University of Singapore. I like building software on various that have a real world impact. 
     
     .cv-card-contact
       %ul.cv-contact-personal
@@ -24,16 +24,16 @@ title: CV
             %a{href: "nuskarthik@gmail.com"} nuskarthik@gmail.com
         %li.cv-contact-item
           %span.icon-phone.contact-label
-          %span.contact-value +65-98916426
+          %span.contact-value +65 98916426
       %ul.cv-contact-web
         %li.cv-contact-item
           %span.icon-site.contact-label
           %span.contact-value
-            %a{href: "http://karthik.github.io"} karthik.github.io
+            %a{href: "http://nuskarthik.github.io"} My Site
         %li.cv-contact-item
-          %span.icon-blog.contact-label
+          %span.icon-site.contact-label
           %span.contact-value
-            %a{href: "http://karthik.github.io/blog"} karthik.github.io/blog
+            %a{href: "http://www.linkedin.com/in/nuskarthik"} My LinkedIn
       %ul.cv-contact-social
         %li.cv-contact-item
           %span.icon-twitter.contact-label
@@ -43,3 +43,174 @@ title: CV
           %span.icon-github.contact-label
           %span.contact-value
             %a{href: "http://github.com/nuskarthik"} @nuskarthik
+  %br
+  %br
+  .cv-experience.cv-full-width-list
+    %h2 Experience
+    %ul
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title IBM Singapore
+          %span.cv-full-width-item-date
+            January 2014 - July 2014
+          %br
+          %h3.cv-full-width-item-comment Software Engineer on QRadar team
+        .cv-full-width-item-desc
+          %ul
+            %br 
+            %li 
+              %span.icon-site.contact-label
+              Tasked with independently building tools to improve the performance of the 
+              %a{href: "http://www-03.ibm.com/software/products/en/qradar"} QRadar security
+              platform
+            %br 
+            %li
+              %span.icon-site.contact-label
+              Designed an application to perform Data Mining on system log files for patterns to allow the platform to handle classifying event conditions that were not pre-configured.  
+              %em AngularJS, Node, MongoDB, Express
+            %br 
+            %li
+              %span.icon-site.contact-label
+              Ideated and implemented a simulator to analyze the performance of the log miner output with the core platform by generating new test cases.
+              %em Node, Nodyn
+            %br 
+            %li 
+              %span.icon-site.contact-label
+              Improved mapping designed to suggest security violations using WEKA NaiveBayes classifier. 
+              %em Java
+            %br 
+            %li 
+              %span.icon-site.contact-label
+              Delivered internal release of the toolbox with a regex tester which reduced L2 troubleshooting by 20 hours and configuration by 5 hours.
+
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title Teamie
+          %span.cv-full-width-item-date
+            May 2013 - July 2013
+          %br
+          %h3.cv-full-width-item-comment Mobile Engineer
+        .cv-full-width-item-desc
+          %ul
+            %br 
+            %li 
+              Designated as the sole intern developing the Android version of the next generation of Teamie mobile.
+            %br 
+            %li 
+              Designed the user experience for phones and tablets and implemented the mobile version for the featuers of social learning web platform. Tested and benchmarked the application.
+              %em Java, Android, XML
+            %br 
+            %li
+              Implemented caching system for offline viewing and mobile specific features with real time syncing. 
+              %em SQLite
+            %br 
+            %li
+              Modified design of API endpoint for Gradebook, reducing it's response time by a few seconds. 
+              %em PHP, JSON
+            %br 
+            %li
+              Released the application to clients, currently available on the 
+              %a{href: "https://play.google.com/store/apps/details?id=com.theteamie.android.app&hl=en"}Google Play Store
+              and used by over 1000 users.
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title Cognizant
+          %span.cv-full-width-item-date
+            May 2012 - July 2012
+          %br
+          %h3.cv-full-width-item-comment Research Intern
+        .cv-full-width-item-desc
+          %ul
+            %br 
+            %li 
+              Independently developed a framework to perform gesture recognition of the user using the $N algorithm by making use of OpenNi and the Kinect SDK to track skeletal motion with the Kinect.
+              %em C#
+            %br 
+            %li 
+              Showcased a cross PC photo sharing application to demonstrate the framework's features.
+
+  .cv-side-projects.cv-full-width-list
+    %h2 Projects
+    %ul
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title HyMart | Project Lead
+          %a.cv-full-width-item-link{href: "http://www.github.com/CG3002"} code
+          %span.cv-full-width-item-date
+            %em Python, Flask
+        .cv-full-width-item-desc
+          Lead a team of 6 engineers to deliver a prototype of a 'smart' supermarket with online billing
+        %br
+          Built both a retail and headquarters application for managing stock and dynamic pricing based on daily transactions and monitor analytics and trends and interfaced with custom built hardware.
+        %br
+
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title Parallel Agent based Demographic Simulation | Final Year Project
+          %span.cv-full-width-item-date
+            %em C++, OpenMPI, D3.js
+        .cv-full-width-item-desc
+          Data science project to analyse the impact of immigration policies on education and employment in Singapore using agent based simulation.
+        %br 
+          Presented visualization of simulation using public government data.
+          %em D3.js        
+        %br
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title Clueless | Software Co-Lead 
+          %span.cv-full-width-item-date
+            %em Python, Django
+        .cv-full-width-item-desc
+          Entrepreneurial venture to create a platform to allow interns multiple role internships
+        %br 
+          Developed frontend application and assisted user acquisition
+        %br 
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title Teammates
+          %a.cv-full-width-item-link{href: "http://www.github.com/TEAMMATES"} code
+          %span.cv-full-width-item-date
+            %em Java, JSP
+        .cv-full-width-item-desc
+        %br 
+          Contributed to an Open Source Project. Fixed UI issues relating to course selection.
+        %br
+      %li.cv-full-width-item
+        .cv-full-width-item-header
+          %h3.cv-full-width-item-title Hint
+          %span.cv-full-width-item-date
+            %em Java, Android, OpenCV
+        .cv-full-width-item-desc
+        %br 
+          Built an Android app that uses a location and an image of a place to tag a message which can be read by other users by visiting the location and scanning the area.
+        %br
+          Uses GPS tracking and basic Augmented Reality
+        %br 
+  .cv-skills.cv-half-width-list
+    %h2 Skills
+    %ul
+      %li.cv-skill
+        %span Java
+      %li.cv-skill
+        %span Javascript
+        
+      %li.cv-skill
+        %span Python
+
+      %li.cv-skill
+        %span C++
+      
+      %li.cv-skill
+        %span Android
+
+      %li.cv-skill
+        %span Learning
+
+  .cv-languages.cv-half-width-list
+    %h2 Status
+    %p Currently looking for a full time Software Engineering position
+    %br
+    %p 
+      %em Experience with:
+    %br
+      MongoDB/Redis, AngularJS/BackboneJS, Coffeescript/Gulp/Grunt ,SASS ,ExpressJS ,PHP ,NodeJS/io.js ,Django/Flask ,SQLite/PostgresSQL ,Shell scripting ,Git

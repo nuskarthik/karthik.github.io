@@ -336,7 +336,7 @@ nav {
   width: 35%;
   background: #387ff2;
   text-align: left;
-  animation: slide-in 0.5s; }
+  animation: slide-in 0.5s both; }
   @media all and (max-width: 830px) {
     .site-header {
       position: static;
@@ -437,7 +437,8 @@ h1 {
   .post .post-header h1 {
     font-size: 3em;
     font-weight: 300;
-    margin-top: 20px; }
+    margin-top: 20px;
+    display: block; }
   .post .post-header .post-date {
     font-family: Source Sans Pro;
     font-weight: 300;
@@ -458,9 +459,10 @@ h1 {
 
 .post-buttons {
   margin-top: 20px; }
-  .post-buttons .twitter-share-button {
-    width: 80px;
-    display: inline-block; }
+  .post-buttons .twitter-share-button,
+  .post-buttons .fb-like {
+    display: inline-block;
+    vertical-align: top; }
   .post-buttons .back-to-blog {
     width: 120px;
     display: block;
@@ -639,7 +641,12 @@ code {
   font-style: normal;
   width: 90%;
   max-width: 800px;
-  margin: 20px auto; }
+  margin: 20px auto 50px auto;
+  zoom: 1; }
+  .cv:after {
+    content: "";
+    display: table;
+    clear: both; }
   @media all and (max-width: 830px) {
     .cv .cv-card {
       text-align: center; } }
@@ -727,38 +734,47 @@ code {
             content: "\74"; }
           .cv .cv-card .cv-card-contact ul .cv-contact-item .contact-label.icon-github:before {
             content: "\67"; }
+          @media all and (max-width: 650px) {
+            .cv .cv-card .cv-card-contact ul .cv-contact-item .contact-label.icon-phone, .cv .cv-card .cv-card-contact ul .cv-contact-item .contact-label.icon-blog, .cv .cv-card .cv-card-contact ul .cv-contact-item .contact-label.icon-github {
+              float: right;
+              margin-top: 4px;
+              margin-left: 4px; } }
     .cv .cv-card .cv-card-contact a {
       color: #444444;
       font-weight: 400;
       transition: all 0.25s; }
       .cv .cv-card .cv-card-contact a:hover {
         color: #387ff2; }
-  .cv .cv-experience {
+  .cv .cv-full-width-list {
     clear: both;
     margin-top: 30px; }
-    .cv .cv-experience .cv-experience-item {
+    .cv .cv-full-width-list .cv-full-width-item {
       margin-bottom: 10px;
       padding: 0 5px; }
-      .cv .cv-experience .cv-experience-item .cv-experience-place {
+      .cv .cv-full-width-list .cv-full-width-item .cv-full-width-item-header {
         margin-bottom: 5px; }
-        .cv .cv-experience .cv-experience-item .cv-experience-place .cv-experience-time {
+        .cv .cv-full-width-list .cv-full-width-item .cv-full-width-item-header .cv-full-width-item-date,
+        .cv .cv-full-width-list .cv-full-width-item .cv-full-width-item-header .cv-full-width-item-link {
           margin-left: 10px; }
-        .cv .cv-experience .cv-experience-item .cv-experience-place .cv-experience-place-desc {
+        .cv .cv-full-width-list .cv-full-width-item .cv-full-width-item-header .cv-full-width-item-link {
+          color: #444444;
+          transition: all 0.25s; }
+          .cv .cv-full-width-list .cv-full-width-item .cv-full-width-item-header .cv-full-width-item-link:hover {
+            color: #387ff2; }
+        .cv .cv-full-width-list .cv-full-width-item .cv-full-width-item-header .cv-full-width-item-desc {
           font-weight: 400; }
-      .cv .cv-experience .cv-experience-item h3 {
+      .cv .cv-full-width-list .cv-full-width-item h3 {
         display: inline-block; }
-    .cv .cv-experience .cv-experience-item + .cv-experience-item {
+    .cv .cv-full-width-list .cv-full-width-item + .cv-full-width-item {
       border-top: 1px solid #387ff2;
       padding-top: 10px;
       margin-bottom: 0; }
-  .cv .cv-skills,
-  .cv .cv-languages {
+  .cv .cv-half-width-list {
     display: inline-block;
     width: 48%;
     vertical-align: top; }
     @media all and (max-width: 650px) {
-      .cv .cv-skills,
-      .cv .cv-languages {
+      .cv .cv-half-width-list {
         display: block;
         width: 100%; } }
   .cv .cv-skills {
