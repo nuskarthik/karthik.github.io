@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Karthik Raj</title>
-    <meta content='Karthik Raj. Engineer.' name='description'>
-    <meta content='width=device-width,initial-scale=1' name='viewport'>
-    <!-- facebook meta tags -->
-    <meta content='100003993588361' property='fb:admins'>
-    <meta content='Karthik Raj Portfolio' name='og:site_name'>
-    <meta content='http://nuskarthik.github.io/images/avatar-large.png' name='og:image'>
-    <meta content='' name='og:title'>
-    <meta content='http://nuskarthik.github.io/index.html' name='og:url'>
-    <!-- scripts -->
-    <script src='/js/jquery-1.10.2.min.js'></script>
-    <script src='/js/prefixfree.min.js'></script>
-    <script src='/js/main.js'></script>
-    <!-- css -->
-    <link href='/css/main.css' rel='stylesheet'>
-  </head>
-  <body>
-    <nav>
+---
+layout: base
+---
+<nav>
   <a href='https://www.github.com/nuskarthik'>Projects</a>
   <a href='/cv.html'>Work</a>
 </nav>
@@ -27,16 +9,7 @@
   <div class='me'>
     <img class='avatar' src='/images/avatar-large.png'>
     <div class='bio-profiles'>
-      <a class='profile-link twitter' data-user='heykarthikhere' href='https://twitter.com/heykarthikhere'>
-  <img alt='twitter' src='/images/twitter.png'>
-</a>
-<a class='profile-link github' data-user='nuskarthik' href='https://github.com/nuskarthik'>
-  <img alt='github' src='/images/github.png'>
-</a>
-<a class='profile-link linkedin' data-user='nuskarthik' href='http://www.linkedin.com/in/nuskarthik'>
-  <img src='/images/linkedin.png'>
-</a>
-
+      {% include profile_links.html %}
     </div>
   </div>
   <div class='bio-carousel'>
@@ -46,7 +19,7 @@
         <h1>Karthik Raj</h1>
       </div>
       <div class='desc-part'>
-        <p>A software engineer who like building software to solve real world problems on lots of platforms.</p>
+        <p>A software engineer who likes building things to solve real world problems.</p>
       </div>
       <div class='desc-part'>
         <p>
@@ -68,22 +41,3 @@
     </div>
   </div>
 </div>
-
-    <!-- .copyright-wrapper -->
-    <!-- .copyright -->
-    <!-- All Rights Reserved - &copy; Karthik Raj 2015 -->
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-42650316-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </body>
-</html>

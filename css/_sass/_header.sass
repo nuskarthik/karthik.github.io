@@ -1,0 +1,37 @@
+@import 'css/_sass/_variables'
+@import 'css/_sass/_mixins'
+@import 'css/_sass/_keyframes'
+
+.site-header
+	position: fixed
+	top: 10%
+	left: 0
+	width: 35%
+	background: $primary-color
+	text-align: left
+	animation: slide-in 0.5s both
+
+	@include medium-break
+		position: static
+		height: auto
+		width: 100%
+		border-radius: 0
+		animation: none
+
+	.header-content
+		@include header-font
+		@include text-color($text-color-light)
+
+		float: right
+		width: 290px
+		padding: 20px
+
+		@include medium-break
+			float: none
+			width: 100%
+			padding: 40px
+
+		h1
+			font-size: 4em
+			line-height: 1em
+			margin-bottom: 10px
